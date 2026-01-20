@@ -12,3 +12,7 @@ Basic JavaScript: I created a simple script to open and close the menu on mobile
 Why I built this: I wanted to apply what I'm learning in college to a real-world example, helping a local business have an online presence.
 
 
+
+*Code comments and interface are in Portuguese. Future projects will be documented in English.
+
+
