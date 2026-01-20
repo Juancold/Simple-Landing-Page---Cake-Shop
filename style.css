@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  padding-top: 80px; 
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d40000;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcccb;
+}
+
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #d40000;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  background-color: #fff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.03);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.item h3 {
+  font-size: 20px;
+  color: #d40000;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.item span {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.btn-contato {
+  display: inline-block;
+  background-color: #d40000;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contato:hover {
+  background-color: #a70000;
+}
+
+
+footer {
+  background-color: #d40000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 90%;
+  }
+  #menu-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #d40000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .menu-aberto {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+}
